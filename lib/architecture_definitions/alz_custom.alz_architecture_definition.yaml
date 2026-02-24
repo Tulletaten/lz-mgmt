@@ -1,0 +1,68 @@
+"management_groups":
+- "archetypes":
+  - "root_custom"
+  "display_name": "Azure Landing Zones"
+  "exists": true
+  "id": "alz-poc"
+  "parent_id": null
+- "archetypes":
+  - "platform_custom"
+  "display_name": "Platform"
+  "exists": false
+  "id": "platform-poc"
+  "parent_id": "alz-poc"
+- "archetypes":
+  - "landing_zones_custom"
+  "display_name": "Landing Zones"
+  "exists": false
+  "id": "landingzones-poc"
+  "parent_id": "alz-poc"
+- "archetypes":
+  - "corp_custom"
+  "display_name": "Corp"
+  "exists": false
+  "id": "corp-poc"
+  "parent_id": "landingzones-poc"
+- "archetypes":
+  - "online_custom"
+  "display_name": "Online"
+  "exists": false
+  "id": "online-poc"
+  "parent_id": "landingzones-poc"
+- "archetypes":
+  - "sandbox_custom"
+  "display_name": "Sandbox"
+  "exists": false
+  "id": "sandbox-poc"
+  "parent_id": "alz-poc"
+- "archetypes":
+  - "security_custom"
+  "display_name": "Security"
+  "exists": false
+  "id": "security-poc"
+  "parent_id": "platform-poc"
+- "archetypes":
+  - "management_custom"
+  "display_name": "Management"
+  "exists": false
+  "id": "management-poc"
+  "parent_id": "platform-poc"
+- "archetypes":
+  - "connectivity_custom"
+  "display_name": "Connectivity"
+  "exists": false
+  "id": "connectivity-poc"
+  "parent_id": "platform-poc"
+- "archetypes":
+  - "identity_custom"
+  "display_name": "Identity"
+  "exists": false
+  "id": "identity-poc"
+  "parent_id": "platform-poc"
+- "archetypes":
+  - "decommissioned_custom"
+  "display_name": "Decommissioned"
+  "exists": false
+  "id": "decommissioned-poc"
+  "parent_id": "alz-poc"
+"name": "alz_custom"
